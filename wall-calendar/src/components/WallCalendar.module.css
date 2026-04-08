@@ -1,0 +1,37 @@
+
+.wrapper {
+  font-family: var(--font-dm), sans-serif;
+  max-width: 880px;
+  margin: 0 auto;
+  padding: 1.5rem;
+  min-height: 100vh;
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+}
+
+.calendar {
+  width: 100%;
+  background: #fff;
+  border-radius: 20px;
+  border: 2.5px solid #1a1a2e;
+  box-shadow: 7px 7px 0 #1a1a2e;
+  overflow: hidden;
+  animation: popIn 0.45s cubic-bezier(0.34, 1.56, 0.64, 1) both;
+}
+
+.body {
+  display: grid;
+  grid-template-columns: 195px 1fr;
+}
+
+@keyframes popIn {
+  from { opacity: 0; transform: scale(0.94) translateY(12px); }
+  to   { opacity: 1; transform: scale(1) translateY(0); }
+}
+
+@media (max-width: 620px) {
+  .wrapper { padding: 0.75rem; }
+  .body    { grid-template-columns: 1fr; }
+  .calendar { border-radius: 14px; box-shadow: 4px 4px 0 #1a1a2e; }
+}
