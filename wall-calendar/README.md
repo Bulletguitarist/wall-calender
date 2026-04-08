@@ -1,4 +1,4 @@
-# Wall Calendar v2 — Playful & Modern
+# Wall Calendar — Playful & Modern
 
 Interactive wall calendar built with **Next.js 14 App Router** + CSS Modules.
 
